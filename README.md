@@ -1,9 +1,13 @@
 # mv7config
 
-Unofficial utility for configuring Shure MV7 microphones.
+Unofficial utility for configuring Shure MV7 microphones for Linux and macOS.
+
 
 ## Linux
 ![Screenshot of the configuration panel](res/screenshot.png)
+
+### How to start the App
+% python3.11 ./gui.py
 
 
 ## macOS
