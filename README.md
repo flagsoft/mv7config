@@ -167,7 +167,7 @@ Q: app does not start, microphone does not work, etc.
 A: Just un-plug the USB-Calbe for about 10 seconds. Plug the USB-Calbe in again, wait again about 10 seconds after the microphone has completely booted (LEDs will stop blinking), then try again.
 
 
-### FAQ technical details (comunication protocoll)
+### FAQ technical details (communication protocoll)
 
 Q: Is there a secret menu in the microphone?
 
@@ -239,6 +239,61 @@ For example "fwVersion" then after a few other commands the answer shows up "fwV
 ```
 
 
+
+```
+identify         // LEDs blinking
+OK
+
+
+su adm          // switch to user admin
+su=adm\n
+
+
+
+bootDSP C           // Boot to DSP (Digital Sound Protocoll ?)
+dspBooted\n
+
+
+micMute on       // mute mic
+
+
+micMute off      // unmute mic
+
+
+
+inputGain ...
+
+
+// compressor
+setBlock 19 ...
+
+
+// limiter
+setBlock 1F ...
+
+
+// lock user inputs
+lock on
+
+
+// unlock user inputs
+lock off
+
+
+
+audioMute on        // mute audio
+
+
+audioMute off      // unmute audio
+
+
+
+volume ...        // set volume to
+
+
+setBlock 22
+
+```
 
 
 
