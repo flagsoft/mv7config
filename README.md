@@ -1,6 +1,6 @@
 # mv7config
 
-Unofficial utility for configuring Shure MV7 microphones for Linux and macOS.
+Unofficial utility for configuring SHURE MV7 microphones for Linux and macOS.
 
 
 ## Linux
@@ -146,7 +146,7 @@ Hit CONTROL+C to exit.
 
 ### FAQ
 
-Q: Does SHURE VM7+ works?
+Q: Does SHURE VM7+ works? (SHURE VM7 plus)
 
 A: It should, but not tested. Maybe it has an other USB product ID, then the app must be changed.
 
