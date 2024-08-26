@@ -146,6 +146,11 @@ Hit CONTROL+C to exit.
 
 ### FAQ
 
+Q: Does SHURE VM7+ works?
+
+A: It should, but not tested. Maybe it has an other USB product ID, then the app must be changed.
+
+
 Problem:
 - app does not start, microphone does not work, etc.
 
