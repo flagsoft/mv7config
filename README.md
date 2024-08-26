@@ -6,39 +6,51 @@ Unofficial utility for configuring Shure MV7 microphones for Linux and macOS.
 ## Linux
 ![Screenshot of the configuration panel](res/screenshot.png)
 
-### How to start the App
-% python3.11 ./gui.py
+How to start the App
 
+```bash
+% cd <WHERE-YOU-DOWNLOADED>
+% python3.11 ./gui.py
+```
 
 ## macOS
 
-### How to start the App
-% python3.11 ./gui.py
+How to start the App
 
-#### automatic setup
+```
+% cd <WHERE-YOU-DOWNLOADED>
+% python3.11 ./gui.py
+```
+
+### automatic setup
 ![Screenshot of the configuration panel](res/screenshot-macos--automatic.png)
 
-#### manual setup
+## manual setup
 ![Screenshot of the configuration panel](res/screenshot-macos--manual.png)
 
 
 
 
-### Installation
+### Installation macOS
 
 1. Install Cython (C to Python)
-
+```
 % git clone --recursive https://github.com/trezor/cython-hidapi.git
 % cd cython-hidapi
 % python3.11 setup.py build
 % sudo python3.11 setup.py install
 % pip install -e .
+```
 
 2. Install hidapi and hid
 
+```
 % brew install hidapi
+```
 
+```
 % pip install hid
+```
 
 
 3. Install macOS native drivers
@@ -55,7 +67,6 @@ https://github.com/libusb/hidapi/blob/master/BUILD.md#mac
 [ 50%] Building C object src/mac/CMakeFiles/hidapi_darwin.dir/hid.c.o
 [100%] Linking C shared library libhidapi.dylib
 [100%] Built target hidapi_darwin
-
 
 % make install
 [100%] Built target hidapi_darwin
@@ -78,13 +89,14 @@ Install the project...
 
 4. Test your Python HID installation
 
+```
 % python3.11
 >>> import hid
->>>
+>>> hid.version
+(0, 15, 0)
+```
 
-
-
-
+If you can load hid then hid is installed on Python.
 
 
 
@@ -92,17 +104,22 @@ Install the project...
 
 https://github.com/flagsoft/mv7config/tree/main
 
-
+```
 % python3.11 ./repl.py
 No MV7 microphone found
-
+```
 
 Problem:
+
+```
 ValueError: Namespace Handy not available
+```
 
 Solution:
-% brew install libhandy
 
+```
+% brew install libhandy
+```
 
 
 
