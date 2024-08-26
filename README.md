@@ -17,7 +17,7 @@ How to start the App
 
 How to start the App
 
-```
+```bash
 % cd <WHERE-YOU-DOWNLOADED>
 % python3.11 ./gui.py
 ```
@@ -145,6 +145,13 @@ Hit CONTROL+C to exit.
 
 
 ### FAQ
+
+Problem:
+- app does not start, microphone does not work, etc.
+
+Solution:
+- Just un-plug the USB-Calbe for about 10 seconds. Plug the USB-Calbe in again, wait again about 10 seconds after the microphone has completely booted (LEDs will stop blinking), then try again.
+
 
 Problem:
 
