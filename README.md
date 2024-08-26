@@ -102,12 +102,49 @@ If you can load hid then hid is installed on Python.
 
 ### mv7config
 
-https://github.com/flagsoft/mv7config/tree/main
-
 ```
 % python3.11 ./repl.py
 No MV7 microphone found
 ```
+
+Plug in microphone.
+
+```
+% python3.11 ./repl.py
+> help
+audioMute      micMute        volume         inputGain
+fwVersion      serialNum      dspMode        dspVersion
+bootDSP        getSampleRate  getBlock       setBlock
+pkgVersion     lock           myCID          dimMode
+meterMode      rateMismatch   deviceType     interfaceId
+identify       getSN          getSAPSN       
+
+> fwVersion
+fwVersion=0.0.49.0
+
+> dspVersion
+
+dspVersion=0.0.5.22
+
+> pkgVersion
+
+pkgVersion=1.2.17 
+
+> interfaceId
+
+interfaceId=0.3.0
+
+> identify
+
+OK
+
+```
+
+Hit CONTROL+C to exit.
+
+
+
+### FAQ
 
 Problem:
 
